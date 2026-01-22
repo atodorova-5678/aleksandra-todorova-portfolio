@@ -161,6 +161,17 @@
             line-height: 1;
             opacity: 0;
             animation: fadeIn 1.2s ease 1s forwards;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .letter-t {
+            position: absolute;
+            color: #f0ede8;
+            opacity: 0;
+            transform: translate(40px, 40px);
+            pointer-events: none;
         }
 
         .scroll-indicator {
@@ -372,7 +383,7 @@
         }
 
         .expandable-section.expanded .expandable-content {
-            max-height: 600px;
+            max-height: 800px;
         }
 
         .expandable-content ul {
@@ -571,6 +582,28 @@
             flex-wrap: wrap;
         }
 
+        .card-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 1rem;
+        }
+
+        .card-list li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.25rem;
+        }
+
+        .card-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.65em;
+            width: 8px;
+            height: 1px;
+            background: var(--color-accent);
+        }
+
         /* Contact Section */
         .contact {
             background: var(--color-warm);
@@ -736,11 +769,14 @@
 
     <section class="hero">
         <div class="hero-content">
-            <p class="hero-eyebrow">Founding Marketing Leader</p>
-            <h1 class="hero-title"><em>Positioning, Messaging</em> & Go-to-Market</h1>
+            <p class="hero-eyebrow">Aleksandra Todorova</p>
+            <h1 class="hero-title"><em>Strategic Storytelling,</em> Brand, Corporate Communications</h1>
             <p class="hero-subtitle">Marketing leader with 20+ years building brand, communications, and content functions from zero at high-growth B2B SaaS companies; defining positioning and messaging for complex technical products and translating technical capabilities into clear value propositions that drive adoption.</p>
         </div>
-        <div class="hero-decoration">A</div>
+        <div class="hero-decoration">
+            <span class="letter letter-a">A</span>
+            <span class="letter letter-t">T</span>
+        </div>
         <div class="scroll-indicator">
             <span>Scroll</span>
             <div class="scroll-line"></div>
@@ -760,7 +796,7 @@
                 <p class="experience-dates">2022 – 2026</p>
             </div>
             <div class="experience-content">
-                <p class="experience-intro">First senior marketing hire at data transformation platform. Built brand, communications, and content functions, defining messaging and external narrative to enable brand recognition and growth.</p>
+                <p class="experience-intro">Early (pre-Series A) senior marketing hire tasked with building communications, content, brand, and customer marketing functions; defining external narrative to enable brand recognition and growth.</p>
                 
                 <div class="expandable-section">
                     <div class="expandable-header" onclick="toggleSection(this)">
@@ -771,7 +807,6 @@
                         <ul>
                             <li>Defined product positioning and messaging for complex technical product entering crowded market, translating AI-powered data transformation capabilities into value propositions for technical and business audiences</li>
                             <li>Evolved narrative as company scaled from Seed through Series B, continuously refining messaging to support enterprise expansion and new product launches</li>
-                            <li>Created messaging frameworks and positioning documents ensuring consistency across all customer touchpoints, marketing materials, and sales conversations</li>
                         </ul>
                     </div>
                 </div>
@@ -827,13 +862,21 @@
             <div class="experience-content">
                 <p class="experience-intro">Built and scaled content operations for cloud data platform during hypergrowth from $15M to $300M+ ARR and IPO, supporting product launches and go-to-market initiatives.</p>
                 
-                <ul>
-                    <li>Developed content strategy supporting enterprise expansion, translating complex cloud infrastructure and AI/ML capabilities into accessible narratives for diverse audiences</li>
-                    <li>Created high-impact content across formats including customer stories, thought leadership, solution briefs, product announcements, and viral campaigns generating millions of views</li>
-                    <li>Collaborated cross-functionally with Product Marketing, Corporate Communications, Sales, and Developer Relations teams to align content with business priorities and product launches</li>
-                    <li>Operated in fast-paced, high-growth environment managing stakeholder relationships across multiple geographies during public company transition</li>
-                    <li>Established content delivery systems and workflows that scaled with rapid organizational growth</li>
-                </ul>
+                <div class="expandable-section">
+                    <div class="expandable-header" onclick="toggleSection(this)">
+                        <h4>Core Contributions & Strategy</h4>
+                        <span class="expand-icon"></span>
+                    </div>
+                    <div class="expandable-content">
+                        <ul>
+                            <li>Developed content strategy supporting enterprise expansion, translating complex cloud infrastructure and AI/ML capabilities into accessible narratives for diverse audiences</li>
+                            <li>Created high-impact content across formats including customer stories, thought leadership, solution briefs, product announcements, and viral campaigns generating millions of views</li>
+                            <li>Collaborated cross-functionally with Product Marketing, Corporate Communications, Sales, and Developer Relations teams to align content with business priorities and product launches</li>
+                            <li>Operated in fast-paced, high-growth environment managing stakeholder relationships across multiple geographies during public company transition</li>
+                            <li>Established content delivery systems and workflows that scaled with rapid organizational growth</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -846,12 +889,20 @@
             <div class="experience-content">
                 <p class="experience-intro">First marketing hire at fintech startup. Built brand, content, and communications function from zero.</p>
                 
-                <ul>
-                    <li>Defined positioning and messaging for robo-advisor platform targeting financial advisors</li>
-                    <li>Built team of freelance writers, designers, and agencies for content and brand programs</li>
-                    <li>Launched content partnerships with AOL Daily Finance and US News & World Report</li>
-                    <li>Created data-driven research reports generating earned media coverage (CNBC, Business Insider, MarketWatch)</li>
-                </ul>
+                <div class="expandable-section">
+                    <div class="expandable-header" onclick="toggleSection(this)">
+                        <h4>Core Contributions & Strategy</h4>
+                        <span class="expand-icon"></span>
+                    </div>
+                    <div class="expandable-content">
+                        <ul>
+                            <li>Defined positioning and messaging for robo-advisor platform targeting financial advisors</li>
+                            <li>Built team of freelance writers, designers, and agencies for content and brand programs</li>
+                            <li>Launched content partnerships with AOL Daily Finance and US News & World Report</li>
+                            <li>Created data-driven research reports generating earned media coverage (CNBC, Business Insider, MarketWatch)</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -864,12 +915,20 @@
             <div class="experience-content">
                 <p class="experience-intro">First marketing hire at content creation platform serving Fortune 500 clients. Built go-to-market strategy, positioning, and all marketing materials from scratch (acquired by Scribble Technologies/Rock Content).</p>
                 
-                <ul>
-                    <li>Defined product positioning and messaging for new-to-market product, creating all sales and marketing materials</li>
-                    <li>Built and managed operations supporting 200+ freelance content creators, establishing scalable processes and quality standards</li>
-                    <li>Worked directly with Fortune 500 clients including Cisco, Intel, CBS, Yahoo, Zillow, Oracle on content strategy and brand positioning</li>
-                    <li>Led all external communications and company blog</li>
-                </ul>
+                <div class="expandable-section">
+                    <div class="expandable-header" onclick="toggleSection(this)">
+                        <h4>Core Contributions & Strategy</h4>
+                        <span class="expand-icon"></span>
+                    </div>
+                    <div class="expandable-content">
+                        <ul>
+                            <li>Defined product positioning and messaging for new-to-market product, creating all sales and marketing materials</li>
+                            <li>Built and managed operations supporting 200+ freelance content creators, establishing scalable processes and quality standards</li>
+                            <li>Worked directly with Fortune 500 clients including Cisco, Intel, CBS, Yahoo, Zillow, Oracle on content strategy and brand positioning</li>
+                            <li>Led all external communications and company blog</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -879,17 +938,25 @@
                 <p class="experience-dates">2003 – 2018</p>
             </div>
             <div class="experience-content">
-                <div class="earlier-role">
-                    <h5>Strategic Content Marketing Advisor (2015-2018)</h5>
-                    <p>Advised B2B SaaS startups (Strava, Credit Sesame, QA2L) on positioning, messaging, and go-to-market strategy; generated earned media coverage (Bloomberg, Yahoo Finance, USA Today)</p>
-                </div>
-                <div class="earlier-role">
-                    <h5>Mint.com (Intuit) Editor (2010-2011)</h5>
-                    <p>Led content for PLG fintech platform; grew traffic 3x, won OMMA award 2x, managed 20+ writers</p>
-                </div>
-                <div class="earlier-role">
-                    <h5>Dow Jones Senior Writer (2003-2010)</h5>
-                    <p>Financial journalist with exceptional writing skills and ability to translate complex topics</p>
+                <div class="expandable-section">
+                    <div class="expandable-header" onclick="toggleSection(this)">
+                        <h4>Experience Details</h4>
+                        <span class="expand-icon"></span>
+                    </div>
+                    <div class="expandable-content">
+                        <div class="earlier-role">
+                            <h5>Strategic Content Marketing Advisor (2015-2018)</h5>
+                            <p>Advised B2B SaaS startups (Strava, Credit Sesame, QA2L) on positioning, messaging, and go-to-market strategy; generated earned media coverage (Bloomberg, Yahoo Finance, USA Today)</p>
+                        </div>
+                        <div class="earlier-role">
+                            <h5>Mint.com (Intuit) Editor (2010-2011)</h5>
+                            <p>Led content for PLG fintech platform; grew traffic 3x, won OMMA award 2x, managed 20+ writers</p>
+                        </div>
+                        <div class="earlier-role">
+                            <h5>Dow Jones Senior Writer (2003-2010)</h5>
+                            <p>Financial journalist with exceptional writing skills and ability to translate complex topics</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -906,7 +973,21 @@
                 <div>
                     <span class="featured-badge">Favorite Project</span>
                     <h3 class="portfolio-title">The Little Book of Big Dad-a Jokes</h3>
-                    <p class="portfolio-desc">Creative brand campaign and conference giveaway. The book was a hit on the expo floor at Snowflake Summit—one Snowflake architect even started his session by reading jokes from it.</p>
+                    <p class="portfolio-desc">Creative brand campaign and conference giveaway resulting in multiple organic shares on LinkedIn and used in follow-up digital campaigns.</p>
+                    <ul class="card-list">
+                        <li>
+                            <a href="https://www.linkedin.com/posts/coalesceio_contest-alert-today-is-national-tell-activity-7230245638116978688-6M5U/" class="portfolio-link" target="_blank" style="text-transform: none; font-size: 0.85rem;">
+                                Follow-up social media campaign example
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 12px; height: 12px; margin-left: 4px;"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7244461255594237952/" class="portfolio-link" target="_blank" style="text-transform: none; font-size: 0.85rem;">
+                                Organic social share example
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 12px; height: 12px; margin-left: 4px;"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <div>
                     <img src="dada-jokes-book.png" alt="The Little Book of Big Dad-a Jokes" class="portfolio-image">
@@ -947,17 +1028,8 @@
                         <path d="M7 17L17 7M17 7H7M17 7V17"/>
                     </svg>
                 </a>
-            </div>
-
-            <div class="portfolio-card fade-in">
-                <span class="portfolio-company">Coalesce</span>
-                <h3 class="portfolio-title">LinkedIn Lead Gen Content</h3>
-                <p class="portfolio-desc">Example of derivative content produced specifically for LinkedIn lead gen from the annual Data Trends report.</p>
-                <a href="https://www.linkedin.com/posts/xavier-de-boisredon_step-by-step-ai-readiness-framework-after-activity-7413919235048972288--c0p/" class="portfolio-link" target="_blank">
-                    View Post
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                    </svg>
+                <a href="https://www.linkedin.com/posts/xavier-de-boisredon_step-by-step-ai-readiness-framework-after-activity-7413919235048972288--c0p/" class="portfolio-link" target="_blank" style="text-transform: none; color: rgba(255,255,255,0.85); font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem; margin-top: 1rem; display: block;">
+                    <strong style="color: var(--color-accent);">EXECUTIVE FRAMEWORK:</strong> Example of derivative content produced specifically for LinkedIn lead gen using the report.
                 </a>
             </div>
 
@@ -1090,6 +1162,16 @@
 
         document.querySelectorAll('.fade-in').forEach(el => {
             observer.observe(el);
+        });
+
+        // Interactive "AT" Decoration on Scroll
+        window.addEventListener('scroll', () => {
+            const scrollPercent = Math.min(window.scrollY / 400, 1);
+            const letterT = document.querySelector('.letter-t');
+            if (letterT) {
+                letterT.style.opacity = scrollPercent * 0.45;
+                letterT.style.transform = `translate(${40 - (scrollPercent * 60)}px, ${40 - (scrollPercent * 20)}px)`;
+            }
         });
 
         // Smooth scroll for nav links
