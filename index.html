@@ -168,7 +168,7 @@
 
         .letter-t {
             position: absolute;
-            color: #f0ede8;
+            color: #c8c0b8;
             opacity: 0;
             transform: translate(40px, 40px);
             pointer-events: none;
@@ -199,6 +199,10 @@
         /* Section Styles */
         section {
             padding: 6rem 3rem;
+        }
+
+        section.experience {
+            padding-top: 3rem;
         }
 
         .section-header {
@@ -762,8 +766,8 @@
         <div class="nav-links">
             <a href="#experience">Experience</a>
             <a href="#portfolio">Portfolio</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
+            <a href="#core-competencies">More</a>
+            <a href="https://linkedin.com/in/atodorova" target="_blank">Contact</a>
         </div>
     </nav>
 
@@ -777,10 +781,6 @@
             <span class="letter letter-a">A</span>
             <span class="letter letter-t">T</span>
         </div>
-        <div class="scroll-indicator">
-            <span>Scroll</span>
-            <div class="scroll-line"></div>
-        </div>
     </section>
 
     <section class="experience" id="experience">
@@ -793,7 +793,7 @@
             <div class="experience-meta">
                 <h3 class="experience-company">Coalesce</h3>
                 <p class="experience-role">Senior Director, Content Strategy & Corporate Communications</p>
-                <p class="experience-dates">2022 – 2026</p>
+                <p class="experience-dates">2022 – 2025</p>
             </div>
             <div class="experience-content">
                 <p class="experience-intro">Early (pre-Series A) senior marketing hire tasked with building communications, content, brand, and customer marketing functions; defining external narrative to enable brand recognition and growth.</p>
@@ -839,7 +839,7 @@
 
                 <div class="expandable-section">
                     <div class="expandable-header" onclick="toggleSection(this)">
-                        <h4>Building Brand & Content Function</h4>
+                        <h4>Brand, Content & Social Media Functions</h4>
                         <span class="expand-icon"></span>
                     </div>
                     <div class="expandable-content">
@@ -860,7 +860,7 @@
                 <p class="experience-dates">2018 – 2022</p>
             </div>
             <div class="experience-content">
-                <p class="experience-intro">Built and scaled content operations for cloud data platform during hypergrowth from $15M to $300M+ ARR and IPO, supporting product launches and go-to-market initiatives.</p>
+                <p class="experience-intro">Built and scaled content operations for cloud data platform during hypergrowth and IPO, supporting product launches and go-to-market initiatives.</p>
                 
                 <div class="expandable-section">
                     <div class="expandable-header" onclick="toggleSection(this)">
@@ -940,22 +940,29 @@
             <div class="experience-content">
                 <div class="expandable-section">
                     <div class="expandable-header" onclick="toggleSection(this)">
-                        <h4>Experience Details</h4>
+                        <h4>Strategic Content Marketing Advisor (2015–2018)</h4>
                         <span class="expand-icon"></span>
                     </div>
                     <div class="expandable-content">
-                        <div class="earlier-role">
-                            <h5>Strategic Content Marketing Advisor (2015-2018)</h5>
-                            <p>Advised B2B SaaS startups (Strava, Credit Sesame, QA2L) on positioning, messaging, and go-to-market strategy; generated earned media coverage (Bloomberg, Yahoo Finance, USA Today)</p>
-                        </div>
-                        <div class="earlier-role">
-                            <h5>Mint.com (Intuit) Editor (2010-2011)</h5>
-                            <p>Led content for PLG fintech platform; grew traffic 3x, won OMMA award 2x, managed 20+ writers</p>
-                        </div>
-                        <div class="earlier-role">
-                            <h5>Dow Jones Senior Writer (2003-2010)</h5>
-                            <p>Financial journalist with exceptional writing skills and ability to translate complex topics</p>
-                        </div>
+                        <p>Advised B2B SaaS startups (Strava, Credit Sesame, QA2L) on positioning, messaging, and go-to-market strategy; generated earned media coverage (Bloomberg, Yahoo Finance, USA Today)</p>
+                    </div>
+                </div>
+                <div class="expandable-section">
+                    <div class="expandable-header" onclick="toggleSection(this)">
+                        <h4>Mint.com (Intuit) — Editor (2010–2011)</h4>
+                        <span class="expand-icon"></span>
+                    </div>
+                    <div class="expandable-content">
+                        <p>Led content for PLG fintech platform; grew blog traffic 3x, won OMMA Award 2x, managed 20+ writers and designers; secured coverage in CNN Money, Forbes, Time, and CNBC</p>
+                    </div>
+                </div>
+                <div class="expandable-section">
+                    <div class="expandable-header" onclick="toggleSection(this)">
+                        <h4>Dow Jones — Senior Writer (2003–2010)</h4>
+                        <span class="expand-icon"></span>
+                    </div>
+                    <div class="expandable-content">
+                        <p>Financial journalist; weekly SmartMoney.com column, Wall Street Journal contributor; media appearances on MSNBC and CBS as subject matter expert</p>
                     </div>
                 </div>
             </div>
@@ -1074,7 +1081,7 @@
                 <h3 class="portfolio-title">Snowflake: The Definitive Guide</h3>
                 <p class="portfolio-desc">Worked with author Joice Avilla to ensure she has all knowledge, connections, resources available to her within Snowflake to write the book; Snowflake sponsored the 1st edition to use in DG campaigns.</p>
                 <a href="https://www.amazon.com/Snowflake-Definitive-Architecting-Designing-Deploying/dp/1098103823/" class="portfolio-link" target="_blank">
-                    View Book
+                    View on Amazon
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M7 17L17 7M17 7H7M17 7V17"/>
                     </svg>
@@ -1103,9 +1110,25 @@
         </div>
     </section>
 
-    <section class="education" id="education">
+    <section class="core-competencies" id="core-competencies">
         <div class="section-header">
             <span class="section-number">03</span>
+            <h2 class="section-title">Core Competencies</h2>
+        </div>
+        <p class="fade-in" style="color: var(--color-muted); line-height: 1.9;">Global Communications Strategy &bull; PR &amp; Earned Media &bull; Executive Thought Leadership &bull; Social Media Strategy &bull; B2B SaaS &bull; Enterprise Tech Narrative &bull; AI Communications &bull; Brand Storytelling &bull; Media Relations &bull; Agency Management &bull; Content Strategy &bull; Product Launch Communications &bull; Corporate Communications &bull; Cross-Functional Leadership &bull; Developer Audience Storytelling &bull; Content Development &bull; Video Production</p>
+    </section>
+
+    <section class="certifications" id="certifications" style="padding-top: 1.5rem;">
+        <div class="section-header">
+            <span class="section-number">04</span>
+            <h2 class="section-title">Certifications</h2>
+        </div>
+        <p class="fade-in" style="color: var(--color-muted); line-height: 1.9;">AI Fluency: Framework &amp; Foundations (Anthropic) &bull; Behavior Change Specialist (NASM) &bull; Certified Personal Trainer (NASM) &bull; RRCA Level II Adult Distance Running Coach &bull; USATF Level 1 Track &amp; Field Coach</p>
+    </section>
+
+    <section class="education" id="education">
+        <div class="section-header">
+            <span class="section-number">05</span>
             <h2 class="section-title">Education</h2>
         </div>
 
@@ -1125,14 +1148,7 @@
         <h2 class="contact-title">Let's <em>connect</em></h2>
         <p class="contact-subtitle">San Francisco Bay Area</p>
         <div class="contact-links">
-            <a href="mailto:atodorova@gmail.com" class="contact-link">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <rect x="2" y="4" width="20" height="16" rx="2"/>
-                    <path d="M22 6L12 13L2 6"/>
-                </svg>
-                atodorova@gmail.com
-            </a>
-            <a href="https://linkedin.com/in/atodorova" class="contact-link" target="_blank">
+<a href="https://linkedin.com/in/atodorova" class="contact-link" target="_blank">
                 <svg viewBox="0 0 24 24" fill="currentColor">
                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                 </svg>
@@ -1169,7 +1185,7 @@
             const scrollPercent = Math.min(window.scrollY / 400, 1);
             const letterT = document.querySelector('.letter-t');
             if (letterT) {
-                letterT.style.opacity = scrollPercent * 0.45;
+                letterT.style.opacity = scrollPercent * 0.85;
                 letterT.style.transform = `translate(${40 - (scrollPercent * 60)}px, ${40 - (scrollPercent * 20)}px)`;
             }
         });
